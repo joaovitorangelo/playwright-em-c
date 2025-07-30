@@ -1,0 +1,11 @@
+D:\projects\playwright-c\MyApp.Domain\bin\Debug\net9.0\MyApp.Domain.deps.json
+D:\projects\playwright-c\MyApp.Domain\bin\Debug\net9.0\MyApp.Domain.dll
+D:\projects\playwright-c\MyApp.Domain\bin\Debug\net9.0\MyApp.Domain.pdb
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.AssemblyInfoInputs.cache
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.AssemblyInfo.cs
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.csproj.CoreCompileInputs.cache
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.dll
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\refint\MyApp.Domain.dll
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.pdb
+D:\projects\playwright-c\MyApp.Domain\obj\Debug\net9.0\ref\MyApp.Domain.dll

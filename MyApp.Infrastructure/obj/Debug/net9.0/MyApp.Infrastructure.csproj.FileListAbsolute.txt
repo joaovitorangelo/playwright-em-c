@@ -1,0 +1,15 @@
+D:\projects\playwright-c\MyApp.Infrastructure\bin\Debug\net9.0\MyApp.Infrastructure.deps.json
+D:\projects\playwright-c\MyApp.Infrastructure\bin\Debug\net9.0\MyApp.Infrastructure.dll
+D:\projects\playwright-c\MyApp.Infrastructure\bin\Debug\net9.0\MyApp.Infrastructure.pdb
+D:\projects\playwright-c\MyApp.Infrastructure\bin\Debug\net9.0\MyApp.Domain.dll
+D:\projects\playwright-c\MyApp.Infrastructure\bin\Debug\net9.0\MyApp.Domain.pdb
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.csproj.AssemblyReference.cache
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.AssemblyInfoInputs.cache
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.AssemblyInfo.cs
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.csproj.CoreCompileInputs.cache
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.In.4513676F.Up2Date
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.dll
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\refint\MyApp.Infrastructure.dll
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.pdb
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\ref\MyApp.Infrastructure.dll
