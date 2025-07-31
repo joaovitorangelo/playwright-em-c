@@ -13,3 +13,4 @@ D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastruct
 D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\refint\MyApp.Infrastructure.dll
 D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.pdb
 D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\ref\MyApp.Infrastructure.dll
+D:\projects\playwright-c\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.sourcelink.json

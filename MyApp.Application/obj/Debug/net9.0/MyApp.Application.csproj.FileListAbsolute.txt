@@ -13,3 +13,4 @@ D:\projects\playwright-c\MyApp.Application\obj\Debug\net9.0\MyApp.Application.dl
 D:\projects\playwright-c\MyApp.Application\obj\Debug\net9.0\refint\MyApp.Application.dll
 D:\projects\playwright-c\MyApp.Application\obj\Debug\net9.0\MyApp.Application.pdb
 D:\projects\playwright-c\MyApp.Application\obj\Debug\net9.0\ref\MyApp.Application.dll
+D:\projects\playwright-c\MyApp.Application\obj\Debug\net9.0\MyApp.Application.sourcelink.json
