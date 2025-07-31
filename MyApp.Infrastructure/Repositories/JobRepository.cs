@@ -33,5 +33,10 @@ public class JobRepository : IJobRepository
         await _context.SaveChangesAsync();
     }
 
+    public async Task<Job?> GetByIdAsync(long id)
+{
+    return await _context.Jobs.FindAsync(id);
+}
+
     // Outros métodos que você já tiver...
 }

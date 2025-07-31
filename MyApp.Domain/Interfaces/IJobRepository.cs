@@ -7,4 +7,6 @@ public interface IJobRepository
     Task AddJobAsync(Job job);
     Task<List<Job>> GetPendingJobsAsync();       // 👈 novo
     Task UpdateJobAsync(Job job);                // 👈 novo
+    Task<Job?> GetByIdAsync(long id);
+
 }

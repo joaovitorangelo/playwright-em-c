@@ -1,42 +1,42 @@
+using RabbitMQ.Client;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
 using MyApp.Domain.Interfaces;
-using MyApp.Domain.Entities;
 
-public class JobProcessingService
+namespace MyApp.Application.Services
 {
-    private readonly IJobRepository _jobRepository;
-    private readonly IJobExecutor _executor;
-
-    public JobProcessingService(IJobRepository jobRepository, IJobExecutor executor)
+    public class JobProcessingService
     {
-        _jobRepository = jobRepository;
-        _executor = executor;
-    }
+        private readonly IJobRepository _repository;
+        private readonly IJobExecutor _executor;
 
-    public async Task ProcessPendingJobsAsync()
-    {
-        var jobs = await _jobRepository.GetPendingJobsAsync();
-
-        foreach (var job in jobs)
+        public JobProcessingService(IJobRepository repository, IJobExecutor executor)
         {
-            job.Status = "processing";
-            job.UpdatedAt = DateTime.UtcNow;
-            await _jobRepository.UpdateJobAsync(job);
+            _repository = repository;
+            _executor = executor;
+        }
 
-            try
-            {
-                // 🔁 Agora chama o executor real
-                var result = await _executor.ExecuteAsync(job);
-                job.Status = "done";
-                job.Result = result;
-            }
-            catch (Exception ex)
-            {
-                job.Status = "failed";
-                job.Result = ex.Message;
-            }
+        public async Task ProcessPendingJobsAsync()
+        {
+            var jobs = await _repository.GetPendingJobsAsync();
 
-            job.UpdatedAt = DateTime.UtcNow;
-            await _jobRepository.UpdateJobAsync(job);
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            using var connection = factory.CreateConnection();
+            using var channel = connection.CreateModel();
+
+            channel.QueueDeclare(queue: "scraping", durable: false, exclusive: false, autoDelete: false);
+
+            foreach (var job in jobs)
+            {
+                var payload = JsonSerializer.Serialize(new { job.Id, job.PostId });
+                var body = Encoding.UTF8.GetBytes(payload);
+
+                channel.BasicPublish(exchange: "", routingKey: "scraping", basicProperties: null, body: body);
+
+                job.Status = "queued";
+                await _repository.UpdateJobAsync(job);
+            }
         }
     }
 }
